@@ -1,0 +1,46 @@
+﻿<%@ MASTER Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="esercizioWebForm.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="Content/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+    <link href="template.css" rel="stylesheet" />
+    <title>Edil MAN</title>
+    <ASP:CONTENTPLACEHOLDER ID="head" runat="server">
+    </ASP:CONTENTPLACEHOLDER>
+</head>
+<body class="m-0 p-0">
+    <form id="form1" runat="server">
+        <div class="container-fluid row m-0 p-0 ">
+            <div class="col-2 bg-dark d-flex flex-column p-2 ">
+                <div class="fixed-top">
+                    <div class="d-flex mt-5 mx-2 mb-5">
+                        <h1>EDIL<span class="text-light">MAN</span></h1>
+                        <i class="bi bi-buildings-fill text-warning display-6 ms-2"></i>
+                    </div>
+
+                    <div>
+                        <ul>
+                            <li class="text-light list-unstyled Mt-4 "><ASP:HYPERLINK ID="HyperLink1" NavigateUrl="~/home.aspx" runat="server" Font-Underline="false" ForeColor="White">Home</ASP:HYPERLINK></li>
+                            <li class="text-light list-unstyled Mt-2 "><ASP:HYPERLINK ID="HyperLink2" NavigateUrl="~/addDipendente.aspx" runat="server" Font-Underline="false" ForeColor="White">aggiungi nuvo dipendente</ASP:HYPERLINK></li>
+                            <li class="text-light list-unstyled Mt-2 "><ASP:HYPERLINK ID="HyperLink3" NavigateUrl="~/pagamento.aspx" runat="server" Font-Underline="false" ForeColor="White">Effetua Pagamento</ASP:HYPERLINK></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col bg-light p-3 mh-100" style="height:100vh">
+
+                <ASP:CONTENTPLACEHOLDER ID="ContentPlaceHolder1" runat="server">
+                </ASP:CONTENTPLACEHOLDER>
+
+            </div>
+        </div>
+    </form>
+    <script src="Scripts/bootstrap.min.js"></script>
+</body>
+</html>
